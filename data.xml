@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<materials>
+    <substance name="Твердые вещества">
+        <element name="Алюминиевый порошок " value="31.1"/>
+        <element name="Антрацит" value="31.8"/>
+        <element name="Белок растительный" value="23.45"/>
+        <element name="Брикеты бурого угля" value="20.2"/>
+        <element name="Брикеты яичного порошка " value="18.8"/>
+        <element name="Бумага" value="17.6"/>
+        <element name="Бумага разрыхленная" value="13.4"/>
+        <element name="Бумага фотографическая " value="13.27"/>
+        <element name="Буроугольная пыль " value="25"/>
+        <element name="Бурый уголь молодой " value="8.4"/>
+        <element name="Бурый уголь старый " value="18.6"/>
+        <element name="Войлок строительный" value="18.88"/>
+        <element name="Волокно ацетатное " value="18.77"/>
+        <element name="Волокно вискозное " value="15.6"/>
+        <element name="Волокно капроновое" value="30.72"/>
+        <element name="Волокно лавсановое" value="22.58"/>
+        <element name="Волокно нитроновое" value="30.75"/>
+        <element name="Волокно энант" value="32.1"/>
+        <element name="Дерматин" value="21.54"/>
+		<element name="Древесина в изделиях" value="13.8"/>
+        <element name="Древесина в штабелях" value="16.6"/>
+        <element name="Древесина дубовая" value="19.9"/>
+        <element name="Древесина еловая" value="20.32"/>
+        <element name="Древесина зеленая" value="6.3"/>
+        <element name="Древесина сосновая 15.32 - 20.85" value="18.6"/>
+        <element name="Древесина как условное топливо" value="16.45"/>
+        <element name="Жиры животные" value="40"/>		
+        <element name="Зерно" value="16.8"/>
+        <element name="Кальций" value="15.5"/>
+        <element name="Каменный уголь" value="31.25"/>
+        <element name="Картон" value="16.5"/>
+        <element name="Каучук синтетический" value="40.2"/>
+        <element name="Каучук натуральный" value="44.8"/>
+        <element name="Книги на стеллажах" value="13.4"/>
+        <element name="Клепка буковая для паркета" value="17.4"/>
+        <element name="Кожаные обрезки" value="19.9"/>
+        <element name="Кокс газовый" value="26.9"/>
+        <element name="Кокс доменный" value="30.35"/>
+        <element name="Крахмал" value="16.8"/>
+        <element name="Линкруст хлорвиниловый" value="17.1"/>
+        <element name="Линолеум" value="21"/>
+        <element name="Линолуем резиновый (релин)" value="27.21"/>
+		<element name="Магний" value="25.2"/>
+		<element name="Материал (текстиль)" value="18.84"/>
+		<element name="Мука" value="16.8"/>
+		<element name="Натрий" value="10.88"/>
+		<element name="Оргстекло" value="25.1"/>
+		<element name="Парафин твердый" value="11.2"/>
+		<element name="Пенополистирол ПСБ-С" value="41.63"/>
+		<element name="Пенополиуретан" value="24.3"/>
+		<element name="Пенопласт ПХВ-1" value="19.51"/>
+		<element name="Пенопласт ФС-7" value="24.43"/>
+		<element name="Пенопласт ФФ" value="31.4"/>
+		<element name="Пластмасс, кг" value="41.87"/>
+		<element name="Плита древесноволокнистая" value="20.9"/>
+		<element name="Плитка полистирольная" value="41.87"/>
+		<element name="Полиэтилен" value="46.62"/>
+		<element name="Резина" value="14.1"/>
+		<element name="Резинотехнические изделия" value="33.5"/>
+		<element name="Рубероид" value="29.5"/>
+		<element name="Сахар" value="16.8"/>
+		<element name="Сено 14.70 - 16.70" value="16.7"/>
+		<element name="Сера" value="9.21"/>
+		<element name="Смола искусственная" value="16.8"/>
+		<element name="Солома 14.70 - 17.00" value="17"/>
+		<element name="Стекло органическое" value="27.72"/>
+		<element name="Табак 17-19" value="19"/>
+		<element name="Твердое животное масло" value="38.2"/>
+		<element name="Толь" value="15.95"/>
+		<element name="Торф воздушно-сухой" value="16.33"/>
+		<element name="Торф волокнистый сухой" value="21.8"/>
+		<element name="Торф-кокс" value="29.4"/>
+		<element name="Торф фрезерный" value="10.45"/>
+		<element name="Триацетат" value="19.1"/>
+		<element name="Углерод" value="33.3"/>
+		<element name="Уголь бурый  12.50 - 25.00" value="25"/>
+		<element name="Уголь древесный 30.2 -33,9" value="33.9"/>
+		<element name="Уголь коксующийся" value="36.3"/>
+		<element name="Фосфор" value="25.2"/>
+		<element name="Хлопок" value="17.5"/>
+		<element name="Хлопок разрыхленный" value="15.7"/>
+		<element name="Целлофан" value="17.37"/>
+		<element name="Целлюлоза" value="16.4"/>
+		<element name="Целлулоид 16.30 - 20.50" value="20.5"/>
+		<element name="Шевелин" value="17.61"/>
+		<element name="Шерсть 20.50 - 23.10" value="23.1"/>
+		<element name="Шерстяные волокна" value="23.14"/>
+		<element name="Шелк" value="21.00"/>
+		<element name="Ячмень" value="17.37"/>
+    </substance>
+</materials>
+		<element name="Бензин легкий" value="44.5"/>
