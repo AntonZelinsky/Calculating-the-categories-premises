@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "widget.h"
 #include <QtGui>
 #include "Table.h"
 
@@ -70,7 +69,6 @@ MainWindow::MainWindow(QWidget *parent) :
     setWindowModified(false);// Звёздаочка в заголовке программы
     setWindowTitle(QString::fromUtf8("Расчёт категорий помещений [*] - ©Архинстрой"));//[*] нужна для установки звёздочки в зависимости от tWindowModified
     setCentralWidget(main);
-
     connect(tab, SIGNAL(change()), this, SLOT(qg()));
     connect(addDialog, SIGNAL(add()),SLOT(addButton()));
 }
@@ -133,14 +131,13 @@ void MainWindow::about(){
     QMessageBox msgBox;
     msgBox.setWindowTitle("О программе");
     msgBox.setIcon(QMessageBox::Information);
-    msgBox.setText("Расчёт категорий помещения<br>Версия - V1.0");
+    msgBox.setText("Расчёт категорий помещения<br>Версия - V1.1");
     msgBox.setInformativeText("Программа для расчёта категорий помещений по взрыво-пожарной опасности, написана при поддержке кампании ЧАСУП \"Архинстрой\".<br> Зелинский Григорий Антонович<br>г.Пинск ул. ИПД 36 к. 301<br> +375(29)6931784, 8(0165)324070");
     msgBox.exec();
 }
 
 void MainWindow::category(){
     eArea5->setText("");
-    qDebug()<<eArea4->text().toDouble();
     if(eArea4->text().toDouble() >= 2200){
         eArea5->setText("В1");
     }

@@ -19,7 +19,7 @@ Table::Table(QWidget *parent) :
     setItemDelegateForColumn(0, new NotEditableDelegate());//Запрет  на редактирование колонок создан класс
     setItemDelegateForColumn(2, new NotEditableDelegate());//NotEditableDelegate в ктором предопрелён метод
     setItemDelegateForColumn(3, new NotEditableDelegate());//createEditor запрещающий редактировать колонки
-
+    open();/// вызов этой функции обязателен до соединения сигнала itemChanged и слота formula
     connect(model_, SIGNAL(itemChanged(QStandardItem*)), this, SLOT(formula(QStandardItem*)));
     this->horizontalHeader()->setResizeMode(QHeaderView::Interactive);
 //  horizontalHeader()->setResizeMode(QHeaderView::Stretch);
@@ -70,7 +70,7 @@ void Table::deleteEntry(){
     model_->removeRow(indexes[0].row());
 }
 
-void Table::addEntry(const QString set){
+void Table::addEntry(const QString &set){
     model_->insertRow(model_->rowCount());
     model_->setItem(model_->rowCount()-1,1, new QStandardItem("0"));/// невидимые  ячейки  заполняем
     model_->setItem(model_->rowCount()-1,2, new QStandardItem("0"));/// нулями, чтобы небыло проблем
@@ -79,17 +79,17 @@ void Table::addEntry(const QString set){
     this->setSpan(model_->rowCount()-1,0,1,4);
 }
 
-bool Table::open(){
+void Table::open(){
         if (!QFile::exists("./data.xml"))
         {
             QMessageBox::critical(this,"Ошибка","Файл не найден");
-            return false;
+            return;
         }
 
         QFile file("./data.xml");
         if( !file.open(QIODevice::ReadOnly) )
         {
-           return false;
+           return;
         }
 
         QXmlStreamReader xml(&file);
@@ -111,7 +111,6 @@ bool Table::open(){
             }
             xml.readNext();
         }
-        return true;
 }
 
 void Table::save()
@@ -159,7 +158,7 @@ double Table::q(){
     temp = 0;
     if(!in){
         for(int i = 0; i < model_->rowCount(); i++){
-            temp += model_->item(i,3)->text().toDouble();/// TODO: заменить 2 на 3
+            temp += model_->item(i,3)->text().toDouble();
         }
     }
     return temp;

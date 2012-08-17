@@ -7,7 +7,7 @@ class Table : public  QTableView
     Q_OBJECT
 public:
     explicit Table(QWidget *parent = 0);
-    bool open();
+    void open();
     double q();
 
 private:
@@ -20,7 +20,7 @@ signals:
 
 public slots:
     void addEntry( const QString &, double );
-    void addEntry(const QString );
+    void addEntry(const QString & );
     void deleteEntry();
     void save();
 
