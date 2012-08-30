@@ -4,9 +4,9 @@
 #
 #-------------------------------------------------
 
-QT       += core gui xml
+QT     += core gui xml
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+CONFIG += release
 
 TARGET = CTCP
 TEMPLATE = app
@@ -15,11 +15,13 @@ SOURCES += main.cpp\
         mainwindow.cpp \
 	Table.cpp \
 	AddDialog.cpp \
-	NotEditableDelegate.cpp
+	NotEditableDelegate.cpp \
+        widget.cpp
 
 HEADERS  += mainwindow.h \
 	Table.h \
 	AddDialog.h \
-	NotEditableDelegate.h
+	NotEditableDelegate.h \
+        widget.h
 
 FORMS    += mainwindow.ui

@@ -1,9 +1,15 @@
 #include "AddDialog.h"
-
+#include <QDebug>
+#include <QTextCodec>
 AddDialog::AddDialog(QWidget *parent) :
     QDialog(parent)
 {
-    lDescription = new QLabel("Название материала:");
+    lSelected = new QLabel("Категория материала: ");
+    cSelBox = new QComboBox;
+    cSelBox->addItem("Твёрдые вещества");
+    cSelBox->addItem("Жидкие вещества");
+    cSelBox->addItem("Газообразные вещества");
+    lDescription = new QLabel("Название материала: ");
     lTheLow = new QLabel("Низшая теплота сгорания Qн, МДж/кг:");
     eDescription = new QLineEdit;
     eTheLow = new QLineEdit;
@@ -20,12 +26,14 @@ AddDialog::AddDialog(QWidget *parent) :
     connect( closeButton, SIGNAL(clicked()), this, SLOT(close()) );
 
     QGridLayout *gridLayout = new QGridLayout;
-    gridLayout->addWidget( lDescription, 0, 0, 1, 1 );
-    gridLayout->addWidget( eDescription, 0, 1, 1, 1 );
-    gridLayout->addWidget( lTheLow, 1, 0, 1, 1 );
-    gridLayout->addWidget( eTheLow, 1, 1, 1, 1 );
-    gridLayout->addWidget( addButton, 2, 0, 1, 1 );
-    gridLayout->addWidget( closeButton, 2, 1, 1, 1 );
+    gridLayout->addWidget( lSelected, 0, 0, 1, 1 );
+    gridLayout->addWidget( cSelBox, 0, 1, 1, 1 );
+    gridLayout->addWidget( lDescription, 1, 0, 1, 1 );
+    gridLayout->addWidget( eDescription, 1, 1, 1, 1 );
+    gridLayout->addWidget( lTheLow, 2, 0, 1, 1 );
+    gridLayout->addWidget( eTheLow, 2, 1, 1, 1 );
+    gridLayout->addWidget( addButton, 3, 0, 1, 1 );
+    gridLayout->addWidget( closeButton, 3, 1, 1, 1 );
     setLayout( gridLayout );
 
     setWindowTitle("Добавить материал");
@@ -46,12 +54,12 @@ void AddDialog::check()
 
 void AddDialog::addButtonClicked()
 {
+    category = cSelBox->currentIndex();
     description = eDescription->text();
     eTheLow->text().replace(",",".");
     value = eTheLow->text().toDouble();
     eDescription->clear();
     eTheLow->clear();
-
     hide();
     emit add();
 }

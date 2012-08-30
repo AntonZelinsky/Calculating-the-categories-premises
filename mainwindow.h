@@ -3,6 +3,7 @@
 #include "Table.h"
 #include <QMainWindow>
 #include <AddDialog.h>
+#include <widget.h>
 
 namespace Ui {
 class MainWindow;
@@ -15,23 +16,26 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    void category();
+    void closeEvent(QCloseEvent *);
 
 private:
     Ui::MainWindow *ui;
-    Table *tab;
+    Table *table;
     AddDialog *addDialog;
     void createActions();
-    QLineEdit *eArea1;
-    QLineEdit *eArea3;
-    QLineEdit *eArea4;
-    QLineEdit *eArea5;
+    void category();//расчитать категорию
+    void buildWorkSpace();
+    QTabWidget *tab;
+    Widget *s;
 
+    int qt;
 private slots:
     void deleteSelected();
     void addButton();
     void qg();/// устанавливает значения Q и G
     void about();
+    void save();
+    void compare(int i);
 };
 
 #endif // MAINWINDOW_H

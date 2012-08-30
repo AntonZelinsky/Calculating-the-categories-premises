@@ -90,6 +90,68 @@
 		<element name="Шерстяные волокна" value="23.14"/>
 		<element name="Шелк" value="21.00"/>
 		<element name="Ячмень" value="17.37"/>
+	</substance>
+	<substance name="Жидкие вещества">
+		<element name="Асфальт" value="39.9"/>
+		<element name="Бензин" value="43.7"/>
+		<element name="Бензин легкий" value="44.5"/>
+		<element name="Бензин легкий" value="44.5"/>
+		<element name="Бензин средний" value="43.1"/>
+		<element name="Бензол" value="40.3"/>
+		<element name="Бензол моторный из дегтя каменноугольного" value="40.45"/>
+		<element name="Деготь" value="38"/>
+		<element name="Деготь каменноугольный" value="39.7"/>
+		<element name="Керосин" value="43.1"/>
+		<element name="Ксилол" value="41.12"/>
+		<element name="Мазут" value="42.84"/>
+		<element name="Масло газовое" value="42.9"/>
+		<element name="Масло льняное" value="39.52"/>
+		<element name="Масло из дегтя" value="39.52"/>
+		<element name="Масло креозоловое" value="37.8"/>
+		<element name="Масло рапсовое" value="39.9"/>
+		<element name="Масло солярное" value="42"/>
+		<element name="Нафталин" value="38.9"/>
+		<element name="Нефть" value="43.05"/>
+		<element name="Нефть метановая" value="21.48"/>
+		<element name="Сероуглерод" value="13.8"/>
+		<element name="Смола буроугольная" value="38.94"/>
+		<element name="Спирт" value="24.74"/>
+		<element name="Спирт 90%-й" value="22.7"/>
+		<element name="Спирт амиловый" value="34.82"/>
+		<element name="Спирт метиловый" value="19.95"/>
+		<element name="Спирт пропиловый" value="30.65"/>
+		<element name="Спирт этиловый" value="26.8"/>
+		<element name="Толуол" value="40.66"/>
+		<element name="Топливо дизельное жидкое" value="41.9"/>
+		<element name="Топливо жидкое" value="41.53"/>
+		<element name="Фенол" value="32.24"/>
+    </substance>
+    <substance name="Газообразные вещества">
+		<element name="Ацетилен" value="56.19"/>
+		<element name="Ацетон" value="74.1"/>
+		<element name="Бензол" value="140.13"/>
+		<element name="Бутан" value="120.83"/>
+		<element name="Водород" value="11.14"/>
+		<element name="Газ воздушный" value="4.77"/>
+		<element name="Газ из сточных вод" value="20.93"/>
+		<element name="Газ каменноугольный" value="23.03"/>
+		<element name="Газ коксовый" value="20.43"/>
+		<element name="Газ природный" value="36.63"/>
+		<element name="Газ городской светильный" value="18.84"/>
+		<element name="Гексан" value="171"/>
+		<element name="Гептан" value="183"/>
+		<element name="Диэтиловый эфир" value="112"/>
+		<element name="Изобутан" value="124"/>
+		<element name="Изобутилен" value="113.5"/>
+		<element name="Коксовый водяной газ " value="11.3"/>
+		<element name="Крекинг-газ" value="73.27"/>
+		<element name="Н.пентан" value="146.33"/>
+		<element name="Н.бутан" value="118.65"/>
+		<element name="Метан" value="35.8"/>
+		<element name="Пропан" value="98,68"/>
+		<element name="Пропилен" value="86.63"/>
+		<element name="Толуол" value="166.63"/>
+		<element name="Этан" value="64.31"/>
+		<element name="Этилен" value="59.41"/>
     </substance>
 </materials>
-		<element name="Бензин легкий" value="44.5"/>

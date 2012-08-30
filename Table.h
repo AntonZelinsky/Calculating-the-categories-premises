@@ -14,15 +14,17 @@ private:
     QStandardItemModel *model_;
     double temp;
     int in;
+    QString category;
 
 signals:
     void change();
 
 public slots:
+    bool addEntry( const int cat, const QString &desc, double theLow );
     void addEntry( const QString &, double );
     void addEntry(const QString & );
-    void deleteEntry();
-    void save();
+    bool deleteEntry();
+    bool save();
 
 private slots:
     void formula(QStandardItem*);
